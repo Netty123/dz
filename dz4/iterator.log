@@ -1,0 +1,26 @@
+2026-04-19 22:31:18.407408 - FlatIterator.__init__, list_of_list length=3
+2026-04-19 22:31:18.408000 - FlatIterator.__next__ -> 'a' [outer=0, inner=0]
+2026-04-19 22:31:18.408268 - FlatIterator.__next__ -> 'b' [outer=0, inner=1]
+2026-04-19 22:31:18.408469 - FlatIterator.__next__ -> 'c' [outer=0, inner=2]
+2026-04-19 22:31:18.408687 - FlatIterator.__next__ -> 'd' [outer=1, inner=0]
+2026-04-19 22:31:18.408941 - FlatIterator.__next__ -> 'e' [outer=1, inner=1]
+2026-04-19 22:31:18.409355 - FlatIterator.__next__ -> 'f' [outer=1, inner=2]
+2026-04-19 22:31:18.409684 - FlatIterator.__next__ -> 'h' [outer=1, inner=3]
+2026-04-19 22:31:18.410075 - FlatIterator.__next__ -> False [outer=1, inner=4]
+2026-04-19 22:31:18.410530 - FlatIterator.__next__ -> 1 [outer=2, inner=0]
+2026-04-19 22:31:18.411098 - FlatIterator.__next__ -> 2 [outer=2, inner=1]
+2026-04-19 22:31:18.411335 - FlatIterator.__next__ -> None [outer=2, inner=2]
+2026-04-19 22:31:18.411814 - FlatIterator.__next__ -> StopIteration
+2026-04-19 22:31:18.412118 - FlatIterator.__init__, list_of_list length=3
+2026-04-19 22:31:18.412371 - FlatIterator.__next__ -> 'a' [outer=0, inner=0]
+2026-04-19 22:31:18.412630 - FlatIterator.__next__ -> 'b' [outer=0, inner=1]
+2026-04-19 22:31:18.412873 - FlatIterator.__next__ -> 'c' [outer=0, inner=2]
+2026-04-19 22:31:18.413116 - FlatIterator.__next__ -> 'd' [outer=1, inner=0]
+2026-04-19 22:31:18.413347 - FlatIterator.__next__ -> 'e' [outer=1, inner=1]
+2026-04-19 22:31:18.413574 - FlatIterator.__next__ -> 'f' [outer=1, inner=2]
+2026-04-19 22:31:18.413771 - FlatIterator.__next__ -> 'h' [outer=1, inner=3]
+2026-04-19 22:31:18.413960 - FlatIterator.__next__ -> False [outer=1, inner=4]
+2026-04-19 22:31:18.414267 - FlatIterator.__next__ -> 1 [outer=2, inner=0]
+2026-04-19 22:31:18.414715 - FlatIterator.__next__ -> 2 [outer=2, inner=1]
+2026-04-19 22:31:18.414960 - FlatIterator.__next__ -> None [outer=2, inner=2]
+2026-04-19 22:31:18.415385 - FlatIterator.__next__ -> StopIteration
