@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Каталог телефонов</title>
+    <style>
+        .sort-links { margin: 20px 0; }
+        .sort-links a { margin-right: 15px; }
+        .phone-card { 
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .phone-card img { width: 100px; margin-right: 20px; }
+        .current-sort { font-weight: bold; color: green; }
+    </style>
+</head>
+<body>
+    <h1>Каталог телефонов</h1>
+    
+    <div class="sort-links">
+        <strong>Сортировать по:</strong>
+        <a href="?sort=name" {% if current_sort == 'name' %}class="current-sort"{% endif %}>названию</a>
+        <a href="?sort=min_price" {% if current_sort == 'min_price' %}class="current-sort"{% endif %}>начиная с дешёвых</a>
+        <a href="?sort=max_price" {% if current_sort == 'max_price' %}class="current-sort"{% endif %}>начиная с дорогих</a>
+    </div>
+
+    {% for phone in phones %}
+    <div class="phone-card">
+        <img src="{{ phone.image }}" alt="{{ phone.name }}">
+        <div>
+            <h2>
+                <a href="/catalog/{{ phone.slug }}/">{{ phone.name }}</a>
+            </h2>
+            <p><strong>Стоимость: {{ phone.price }} ₽</strong></p>
+            <p>Дата выхода: {{ phone.release_date }}</p>
+            <p>LTE: {% if phone.lte_exists %}есть{% else %}нет{% endif %}</p>
+        </div>
+    </div>
+    {% empty %}
+        <p>Нет телефонов в каталоге.</p>
+    {% endfor %}
+</body>
+</html>

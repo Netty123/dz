@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ phone.name }} - подробная информация</title>
+    <style>
+        .phone-detail {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .phone-detail img { max-width: 300px; }
+        .back-link { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="phone-detail">
+        <h1>{{ phone.name }}</h1>
+        <img src="{{ phone.image }}" alt="{{ phone.name }}">
+        <p><strong>Цена:</strong> {{ phone.price }} ₽</p>
+        <p><strong>Дата выпуска:</strong> {{ phone.release_date }}</p>
+        <p><strong>Поддержка LTE:</strong> {% if phone.lte_exists %}Да{% else %}Нет{% endif %}</p>
+        
+        <div class="back-link">
+            <a href="/catalog/">← Вернуться в каталог</a>
+        </div>
+    </div>
+</body>
+</html>
